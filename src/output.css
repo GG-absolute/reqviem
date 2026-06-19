@@ -619,6 +619,9 @@
   .max-w-\[280px\] {
     max-width: 280px;
   }
+  .max-w-\[320px\] {
+    max-width: 320px;
+  }
   .max-w-\[340\:\/\/sm\:max-w-\[420px\]\] {
     max-width: 340://sm:max-w-[420px];
   }
@@ -768,6 +771,13 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-16 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 16) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 16) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-y-20 {
@@ -1781,6 +1791,11 @@
       max-width: 320px;
     }
   }
+  .sm\:max-w-\[380px\] {
+    @media (width >= 40rem) {
+      max-width: 380px;
+    }
+  }
   .sm\:min-w-\[40\%\] {
     @media (width >= 40rem) {
       min-width: 40%;
@@ -2132,6 +2147,11 @@
       width: auto;
     }
   }
+  .lg\:max-w-\[420px\] {
+    @media (width >= 64rem) {
+      max-width: 420px;
+    }
+  }
   .lg\:max-w-\[440px\] {
     @media (width >= 64rem) {
       max-width: 440px;
@@ -2185,6 +2205,15 @@
   .lg\:gap-16 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 16);
+    }
+  }
+  .lg\:space-y-24 {
+    @media (width >= 64rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 24) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 24) * calc(1 - var(--tw-space-y-reverse)));
+      }
     }
   }
   .lg\:space-y-28 {
